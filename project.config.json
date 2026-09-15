@@ -1,0 +1,10 @@
+{
+  "description": "一餐两人 · 情侣一起决定今天吃什么",
+  "miniprogramRoot": "miniprogram/",
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "一餐两人",
+  "setting": { "urlCheck": false, "es6": true, "enhance": true, "postcss": true, "minified": true, "coverView": true },
+  "condition": {},
+  "packOptions": { "ignore": [], "include": [] }
+}

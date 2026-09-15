@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "心动菜单",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#fff9fc",
+    "backgroundColor": "#fff9fc",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "networkTimeout": {
+    "request": 30000
+  }
+}

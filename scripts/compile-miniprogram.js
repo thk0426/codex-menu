@@ -1,0 +1,17 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const compiler=require('miniprogram-compiler');
+const root=path.resolve(__dirname,'../miniprogram');
+const out=path.resolve(__dirname,'../artifacts');
+fs.mkdirSync(out,{recursive:true});
+const wxml=compiler.wxmlToJs(root);
+const wxss=compiler.wxssToJs(root);
+fs.writeFileSync(path.join(out,'compiled-wxml.js'),wxml);
+fs.writeFileSync(path.join(out,'compiled-wxss.js'),wxss);
+const ctx=vm.createContext({window:{},console});
+const make=vm.runInContext(`(function(global){${wxml}})({})`,ctx);
+const loading=make('pages/index/index.wxml')({loading:true,statusBar:24});
+fs.writeFileSync(path.join(out,'native-loading-tree.json'),JSON.stringify(loading,null,2));
+console.log(`WXML / WXSS 编译成功：${wxml.length} / ${wxss.length} characters`);
+module.exports={make};

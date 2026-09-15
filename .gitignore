@@ -1,0 +1,7 @@
+.data/
+node_modules/
+project.private.config.json
+*.log
+artifacts/
+release/
+.env

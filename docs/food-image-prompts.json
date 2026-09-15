@@ -1,0 +1,268 @@
+{
+  "generator": "built-in image_gen",
+  "foodStyle": "Create one photorealistic professional food photograph for a warm, romantic Chinese couples menu app. Landscape 4:3 composition. One real finished dish, beautifully and authentically cooked, fully recognizable. View from a 45-degree slightly overhead food photography angle. Center the generous serving in an elegant shallow warm ivory ceramic dish, on a light honey oak dining table, a soft oatmeal linen corner at the edge, minimal restrained props. Natural warm window light from upper left, gentle soft shadows, realistic food texture and appetizing subtle sauce highlights. Refined home-cooking editorial photography, cozy and welcoming, not excessively stylized. Food fills most of the middle 70% of the frame, keep the whole plate inside frame and leave crop-safe margins for mobile cards. No people, no hands, no letters, no labels, no text, no logos, no watermark, no collage, no illustration or emoji.",
+  "notes": "Food-specific briefs describe the required ingredients; each asset was generated separately. Native and web exports differ only in resolution and compression.",
+  "hero": {
+    "prompt": "Create a beautiful wide 3:2 hero banner illustration for a pink romantic Chinese home-cooking menu web app. Match a soft, warmly lit, pastel storybook anime food illustration. Hello Kitty, the recognizable white cat with black oval eyes, yellow oval nose, no mouth, red bow on upper right of her head from viewer perspective, wearing a pink gingham apron with frills, is cooking with a wooden spoon in a large pink heart-pattern casserole pot. Character occupies the right half, head in upper right. Cozy cream and blush pink kitchen with sunlit window, green plants and little strawberries in background. Foreground dining counter covered with several gorgeous Chinese dishes including tomato scrambled eggs, green peppers stir fried pork, red braised pork and a bowl of stew. On left half mostly warm pale peach kitchen wall with a few tiny pink hearts and strawberries, keeping space in lower left clear for white title overlay. Overall dreamy soft peach-pink, high detail food and hand-painted light, adorable and welcoming. No text, no letters, no UI, no phone frame, no watermark. Landscape wide composition, clean edges. This is a standalone background image for a hero.",
+    "web": "public/assets/kitty-kitchen-v2.jpg",
+    "native": "miniprogram/assets/kitty-kitchen-v2.jpg"
+  },
+  "foods": [
+    {
+      "id": "d13",
+      "name": "番茄炒鸡蛋",
+      "brief": "番茄炒鸡蛋。酸甜番茄遇上嫩鸡蛋，最熟悉的家的味道。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-b0132a36-1f4d-4248-8a6e-58d239c50636.png",
+      "web": "public/assets/food/d13-v2.jpg",
+      "native": "miniprogram/assets/food/d13-v2.jpg"
+    },
+    {
+      "id": "d14",
+      "name": "辣椒炒肉",
+      "brief": "辣椒炒肉。青椒鲜辣、肉片香嫩，再来一碗米饭。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-10d3e1b4-fc5c-4d83-a214-949c1a56934a.png",
+      "web": "public/assets/food/d14-v2.jpg",
+      "native": "miniprogram/assets/food/d14-v2.jpg"
+    },
+    {
+      "id": "d15",
+      "name": "红烧肉",
+      "brief": "红烧肉。小火慢炖，软糯的肉香里都是幸福。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-522ecd1d-d9fd-48a9-896f-5558d10a7420.png",
+      "web": "public/assets/food/d15-v2.jpg",
+      "native": "miniprogram/assets/food/d15-v2.jpg"
+    },
+    {
+      "id": "d16",
+      "name": "宫保鸡丁",
+      "brief": "宫保鸡丁。嫩鸡丁配酥脆花生，酸甜微辣刚刚好。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-d4c3e4d7-1b98-4eed-af32-e1e10da9f9f7.png",
+      "web": "public/assets/food/d16-v2.jpg",
+      "native": "miniprogram/assets/food/d16-v2.jpg"
+    },
+    {
+      "id": "d17",
+      "name": "鱼香肉丝",
+      "brief": "鱼香肉丝。肉丝与时蔬裹满鱼香汁，一口就开胃。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-46a83436-6213-4575-82d4-4f238001a04f.png",
+      "web": "public/assets/food/d17-v2.jpg",
+      "native": "miniprogram/assets/food/d17-v2.jpg"
+    },
+    {
+      "id": "d18",
+      "name": "麻婆豆腐",
+      "brief": "麻婆豆腐。嫩豆腐与肉末咕嘟入味，麻辣鲜香。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-bc204b6c-9ba4-495f-8701-58fed7d391a0.png",
+      "web": "public/assets/food/d18-v2.jpg",
+      "native": "miniprogram/assets/food/d18-v2.jpg"
+    },
+    {
+      "id": "d19",
+      "name": "回锅肉",
+      "brief": "回锅肉。煸香的肉片搭配青椒蒜苗，越吃越香。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-161c5b82-c82a-494f-98de-a247f6c1fb52.png",
+      "web": "public/assets/food/d19-v2.jpg",
+      "native": "miniprogram/assets/food/d19-v2.jpg"
+    },
+    {
+      "id": "d20",
+      "name": "糖醋里脊",
+      "brief": "糖醋里脊。酥嫩里脊裹上酸甜酱汁，是快乐的味道。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-a55d1221-5a7f-4861-90aa-5f1a3eb859fc.png",
+      "web": "public/assets/food/d20-v2.jpg",
+      "native": "miniprogram/assets/food/d20-v2.jpg"
+    },
+    {
+      "id": "d21",
+      "name": "可乐鸡翅",
+      "brief": "可乐鸡翅。浓浓酱汁收进鸡翅里，连手指都想舔。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-8905e328-23b4-4973-84f8-bafbdd136a29.png",
+      "web": "public/assets/food/d21-v2.jpg",
+      "native": "miniprogram/assets/food/d21-v2.jpg"
+    },
+    {
+      "id": "d22",
+      "name": "土豆炖牛腩",
+      "brief": "土豆炖牛腩。软烂牛腩配绵软土豆，慢炖一锅温暖。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-23c4b794-7677-42f9-bedd-056be41ddd76.png",
+      "web": "public/assets/food/d22-v2.jpg",
+      "native": "miniprogram/assets/food/d22-v2.jpg"
+    },
+    {
+      "id": "d23",
+      "name": "酸辣土豆丝",
+      "brief": "酸辣土豆丝。清脆爽口的土豆丝，简单也能很下饭。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-f471b123-30d2-4bb0-8cb2-4c5c302f8312.png",
+      "web": "public/assets/food/d23-v2.jpg",
+      "native": "miniprogram/assets/food/d23-v2.jpg"
+    },
+    {
+      "id": "d24",
+      "name": "地三鲜",
+      "brief": "地三鲜。茄子、土豆和青椒，凑成一盘家常鲜。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-8227ca62-7de1-49b8-aaf8-d89b66052d3c.png",
+      "web": "public/assets/food/d24-v2.jpg",
+      "native": "miniprogram/assets/food/d24-v2.jpg"
+    },
+    {
+      "id": "d25",
+      "name": "手撕包菜",
+      "brief": "手撕包菜。大火快炒的脆嫩包菜，香辣又开胃。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-282b8635-caf8-4f73-9127-9b66203d6a72.png",
+      "web": "public/assets/food/d25-v2.jpg",
+      "native": "miniprogram/assets/food/d25-v2.jpg"
+    },
+    {
+      "id": "d26",
+      "name": "蒜蓉西兰花",
+      "brief": "蒜蓉西兰花。翠绿西兰花添一点蒜香，清爽又好吃。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-15b563b0-55de-4ad9-b5ea-f9ee777da275.png",
+      "web": "public/assets/food/d26-v2.jpg",
+      "native": "miniprogram/assets/food/d26-v2.jpg"
+    },
+    {
+      "id": "d27",
+      "name": "香菇青菜",
+      "brief": "香菇青菜。鲜香菌菇配嫩绿青菜，给餐桌添一抹绿。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-ac4cb1b0-90ef-477d-89a5-41520e080641.png",
+      "web": "public/assets/food/d27-v2.jpg",
+      "native": "miniprogram/assets/food/d27-v2.jpg"
+    },
+    {
+      "id": "d28",
+      "name": "凉拌黄瓜",
+      "brief": "凉拌黄瓜。拍一拍、拌一拌，酸香爽脆的小凉菜。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-70c52b11-c94c-4311-8f52-dfc4e6ed23f3.png",
+      "web": "public/assets/food/d28-v2.jpg",
+      "native": "miniprogram/assets/food/d28-v2.jpg"
+    },
+    {
+      "id": "d29",
+      "name": "紫菜蛋花汤",
+      "brief": "紫菜蛋花汤。轻盈蛋花与鲜香紫菜，饭前暖暖胃。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-49ae0b83-8f02-464e-bb1e-aecff6df26e8.png",
+      "web": "public/assets/food/d29-v2.jpg",
+      "native": "miniprogram/assets/food/d29-v2.jpg"
+    },
+    {
+      "id": "d30",
+      "name": "冬瓜排骨汤",
+      "brief": "冬瓜排骨汤。排骨慢炖出鲜味，冬瓜清甜又暖心。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-bd27fda3-81f2-45ef-bc47-1a1238b2737b.png",
+      "web": "public/assets/food/d30-v2.jpg",
+      "native": "miniprogram/assets/food/d30-v2.jpg"
+    },
+    {
+      "id": "d31",
+      "name": "清蒸鲈鱼",
+      "brief": "清蒸鲈鱼。葱姜衬出鱼肉的鲜嫩，好好吃一顿饭。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-63f897ae-63e8-4fac-b085-2b8d1e79ef11.png",
+      "web": "public/assets/food/d31-v2.jpg",
+      "native": "miniprogram/assets/food/d31-v2.jpg"
+    },
+    {
+      "id": "d32",
+      "name": "蛋炒饭",
+      "brief": "蛋炒饭。米饭裹上金黄蛋香，一碗简单的小满足。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-87359a36-0f4f-451d-a985-c003268a82ec.png",
+      "web": "public/assets/food/d32-v2.jpg",
+      "native": "miniprogram/assets/food/d32-v2.jpg"
+    },
+    {
+      "id": "d1",
+      "name": "田园藜麦能量碗",
+      "brief": "田园藜麦能量碗。新鲜时蔬，把好心情装进碗里。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-14adc6f2-83be-4a84-aa1b-a33f70e1b92b.png",
+      "web": "public/assets/food/d1-v2.jpg",
+      "native": "miniprogram/assets/food/d1-v2.jpg"
+    },
+    {
+      "id": "d2",
+      "name": "香橙鸡丁",
+      "brief": "香橙鸡丁。酸甜橙香裹住鸡丁，一口就心动。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-7ff10e7c-4843-4734-aecd-95f282026e2d.png",
+      "web": "public/assets/food/d2-v2.jpg",
+      "native": "miniprogram/assets/food/d2-v2.jpg"
+    },
+    {
+      "id": "d3",
+      "name": "黑椒牛肉炒面",
+      "brief": "黑椒牛肉炒面。浓郁黑椒与嫩牛肉，热乎乎的小满足。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-d88b0cf1-d57a-47a4-a97d-382301c16d6b.png",
+      "web": "public/assets/food/d3-v2.jpg",
+      "native": "miniprogram/assets/food/d3-v2.jpg"
+    },
+    {
+      "id": "d4",
+      "name": "牛油果鲜蔬沙拉",
+      "brief": "牛油果鲜蔬沙拉。给忙碌的一天，来一点清新。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-292b2c00-b652-4b4f-9120-aa0903960c70.png",
+      "web": "public/assets/food/d4-v2.jpg",
+      "native": "miniprogram/assets/food/d4-v2.jpg"
+    },
+    {
+      "id": "d5",
+      "name": "鲜虾黄金炒饭",
+      "brief": "鲜虾黄金炒饭。一碗粒粒分明，幸福感刚刚好。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-aead1009-88ae-48da-8070-52d3b32ec153.png",
+      "web": "public/assets/food/d5-v2.jpg",
+      "native": "miniprogram/assets/food/d5-v2.jpg"
+    },
+    {
+      "id": "d6",
+      "name": "青酱蘑菇意面",
+      "brief": "青酱蘑菇意面。清新罗勒与鲜香蘑菇，约会的小浪漫。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-cfd16ebe-0d54-47ac-9b9d-470ef949dab7.png",
+      "web": "public/assets/food/d6-v2.jpg",
+      "native": "miniprogram/assets/food/d6-v2.jpg"
+    },
+    {
+      "id": "d7",
+      "name": "香浓南瓜汤",
+      "brief": "香浓南瓜汤。把柔软和温暖，都盛进碗里。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-ad8fbb2f-9cbb-4bbb-8317-12eda16a2df5.png",
+      "web": "public/assets/food/d7-v2.jpg",
+      "native": "miniprogram/assets/food/d7-v2.jpg"
+    },
+    {
+      "id": "d8",
+      "name": "韩式石锅拌饭",
+      "brief": "韩式石锅拌饭。热辣酱汁和多彩配菜，越拌越喜欢。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-2cd7d771-6e2e-47a0-a35f-55a96585f649.png",
+      "web": "public/assets/food/d8-v2.jpg",
+      "native": "miniprogram/assets/food/d8-v2.jpg"
+    },
+    {
+      "id": "d9",
+      "name": "手作小笼包",
+      "brief": "手作小笼包。轻咬一口，包住热乎乎的小幸福。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-5daf1c12-b0cd-4b2b-b02e-0b64a05e117b.png",
+      "web": "public/assets/food/d9-v2.jpg",
+      "native": "miniprogram/assets/food/d9-v2.jpg"
+    },
+    {
+      "id": "d10",
+      "name": "香煎三文鱼",
+      "brief": "香煎三文鱼。慢慢煎，认真吃，和你一起。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-e78ef858-a340-4383-83ae-40fcb6d4e821.png",
+      "web": "public/assets/food/d10-v2.jpg",
+      "native": "miniprogram/assets/food/d10-v2.jpg"
+    },
+    {
+      "id": "d11",
+      "name": "番茄蔬菜浓汤",
+      "brief": "番茄蔬菜浓汤。一碗酸甜鲜香，治愈今天的疲惫。素菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-dcddbf39-6e69-45e4-ada3-4eaea36b51a5.png",
+      "web": "public/assets/food/d11-v2.jpg",
+      "native": "miniprogram/assets/food/d11-v2.jpg"
+    },
+    {
+      "id": "d12",
+      "name": "双人分享披萨",
+      "brief": "双人分享披萨。你一半，我一半，美味不止一倍。荤菜，突出对应的主要食材，不含文字。",
+      "sourceFile": "exec-44634b6b-8838-477c-9f38-99648f13a24e.png",
+      "web": "public/assets/food/d12-v2.jpg",
+      "native": "miniprogram/assets/food/d12-v2.jpg"
+    }
+  ]
+}
