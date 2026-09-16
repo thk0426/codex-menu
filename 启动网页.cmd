@@ -10,3 +10,4 @@ if errorlevel 1 (
 )
 start "" "http://localhost:3000/"
 endlocal
+
