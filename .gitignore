@@ -4,4 +4,8 @@ project.private.config.json
 *.log
 artifacts/
 release/
+dist/
+.wrangler/
+.dev.vars*
+!.dev.vars.example
 .env

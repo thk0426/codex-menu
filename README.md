@@ -2,7 +2,7 @@
 
 一餐两人，刚好是我们。帮助两位用户各自选菜，找到共同想吃的那一口。
 
-交付包含**原生微信小程序（WXML / WXSS / JavaScript）**、可持久化的 Node.js 双人同步服务，以及便于电脑查看的响应式浏览器预览。小程序使用原生页面，没有使用 web-view 包装网页。
+交付包含**原生微信小程序（WXML / WXSS / JavaScript）**、可持久化的 Node.js 双人同步服务、Cloudflare Workers 部署入口，以及便于电脑查看的响应式浏览器预览。小程序使用原生页面，没有使用 web-view 包装网页。
 
 ## 已实现
 
@@ -79,7 +79,7 @@ npm run test:e2e
 
 也可使用 pnpm 按仓库内 `pnpm-lock.yaml` 安装：`pnpm install --frozen-lockfile`。
 
-- `npm test`：25 项检查，覆盖原生页面逻辑、编译后模板分支、双人权限、长轮询、匹配和随机算法、收藏、菜品校验、过期确认、轮流决定、持久化恢复和资源体积。
+- `npm test`：28 项检查，覆盖原生页面逻辑、编译后模板分支、双人权限、长轮询、匹配和随机算法、收藏、菜品校验、订单删除、过期确认、轮流决定、持久化恢复和资源体积。
 - `npm run check:mini`：使用微信 `wcc / wcsc` 的 Node 封装编译 WXML 和 WXSS，产物在 `artifacts/`。
 - `npm run test:e2e`：15 项浏览器流程检查，含两个隔离浏览器间的实际同步，以及 320 / 360 / 390 / 430 / 768 / 1024 / 1440 像素宽度检查。脚本默认使用已安装的 Microsoft Edge；可通过 `BROWSER_CHANNEL=chrome` 改为 Chrome。
 - `npm run qa:native`：将真实 WXML 编译树生成可视化检查截图，覆盖菜单、邀请、添加菜品、推荐、订单、已选与我们页面。截图是编译模板的浏览器渲染，**不是微信真机截图**。
@@ -100,7 +100,23 @@ Node 服务使用 HTTP JSON API 和 20 秒长轮询。选择发生变更时立�
 
 这是适合原型和小规模使用的单进程服务。部署时需持久化数据目录；不要让多个服务实例同时写同一个 JSON 文件。扩展为多实例时，应迁移数据库，并实现跨实例消息通知。
 
-## 部署
+## 部署到 Cloudflare Workers
+
+Cloudflare 上使用 Workers 同时托管页面和 `/api`，房间、双方选择与订单保存在 SQLite Durable Object 中，服务重新发布后仍可恢复。仓库已包含构建脚本、静态资源配置、Worker API 和首次迁移配置。
+
+在 Cloudflare 的 Git 构建设置中选择 **Workers** 项目，生产分支填 `main`，根目录保留 `/`，构建命令填 `pnpm run build`，部署命令填 `pnpm exec wrangler deploy`。不要填写 Pages 的输出目录。完整步骤、验证方式和失败排查见 [Cloudflare 部署说明](docs/CLOUDFLARE.md)。
+
+本地可先执行：
+
+```powershell
+pnpm install --frozen-lockfile
+pnpm run check:cloudflare
+pnpm run dev:cloudflare
+```
+
+打开部署域名的 `/api/health`，看到 `{"ok":true,"runtime":"cloudflare-workers"}` 即表示页面和 API 已同时部署。若之前创建的是 Pages 项目，需要新建 Workers 项目后再导入本仓库。
+
+## 使用 Docker 部署 Node 服务
 
 工程提供 `Dockerfile`、`compose.yaml` 和 `deploy/nginx.example.conf`。以下操作未在当前环境实际部署。
 
@@ -121,10 +137,12 @@ miniprogram/              原生微信小程序
   assets/                插画、导航图标和本地菜品照片
   config.js              服务地址
 server/index.js          双人房间 API 与持久化同步服务
+cloudflare/              Cloudflare Worker API 与 Durable Object
 public/                  响应式浏览器预览
 tests/                   逻辑、API 与编译模板测试
 scripts/                 资源生成、浏览器测试和截图脚本
 deploy/                  HTTPS 反向代理示例
+wrangler.jsonc           Cloudflare 静态资源、绑定与迁移配置
 project.config.json      微信开发者工具导入配置
 ```
 

@@ -1,9 +1,15 @@
 {
   "name": "together-menu",
   "version": "1.0.0",
+  "packageManager": "pnpm@11.19.0",
   "private": true,
   "description": "一餐两人 · 原生微信小程序与双人实时点菜服务",
   "scripts": {
+    "build": "node scripts/build-cloudflare.js",
+    "deploy": "node scripts/build-cloudflare.js && wrangler deploy",
+    "dev:cloudflare": "node scripts/build-cloudflare.js && wrangler dev",
+    "check:cloudflare": "node scripts/build-cloudflare.js && wrangler deploy --dry-run --outdir artifacts/cloudflare-dry-run",
+    "smoke:cloudflare": "node scripts/check-cloudflare-runtime.js",
     "start": "node server/index.js",
     "preview": "node scripts/start-preview.js",
     "dev": "node --watch server/index.js",
@@ -19,6 +25,7 @@
   "devDependencies": {
     "miniprogram-compiler": "0.2.3",
     "playwright": "1.62.1",
-    "sharp": "0.35.4"
+    "sharp": "0.35.4",
+    "wrangler": "4.132.0"
   }
 }
