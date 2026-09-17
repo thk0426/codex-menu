@@ -52,8 +52,12 @@ function setRoom(next) {
 }
 async function request(endpoint, payload, signal) {
   const response = await fetch(endpoint, { method: payload === undefined ? 'GET' : 'POST', headers: { 'Content-Type': 'application/json', ...(credential ? { Authorization: `Bearer ${credential.token}` } : {}) }, body: payload === undefined ? undefined : JSON.stringify(payload), signal });
-  const data = await response.json();
+  const raw = await response.text();
+  let data;
+  try { data = raw ? JSON.parse(raw) : {}; }
+  catch { throw Object.assign(new Error(`点菜服务返回异常（${response.status}），请检查部署配置`), { status: response.status }); }
   if (!response.ok) throw Object.assign(new Error(data.error || '请求失败，请稍后再试'), { status: response.status });
+  if (!data || typeof data !== 'object') throw Object.assign(new Error('点菜服务返回格式异常，请稍后重试'), { status: response.status });
   return data;
 }
 function saveSession(data) { credential = { id: data.room.id, token: data.token, person: data.person }; localStorage.setItem('together-session', JSON.stringify(credential)); person = data.person; room = null; setRoom(data.room); startPolling(); }

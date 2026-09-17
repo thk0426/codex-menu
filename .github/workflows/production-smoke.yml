@@ -16,5 +16,5 @@ jobs:
 
       - name: Verify deployed application
         env:
-          CLOUDFLARE_TEST_URL: https://codex-menu.thk20010426.workers.dev
+          CLOUDFLARE_TEST_URL: https://codex-menu.pages.dev
         run: node scripts/check-cloudflare-runtime.js

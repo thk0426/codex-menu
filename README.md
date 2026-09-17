@@ -116,6 +116,8 @@ pnpm run dev:cloudflare
 
 打开部署域名的 `/api/health`，看到 `{"ok":true,"runtime":"cloudflare-workers"}` 即表示页面和 API 已同时部署。若之前创建的是 Pages 项目，需要新建 Workers 项目后再导入本仓库。
 
+仓库同时包含 `functions/api/[[path]].js`，用于让现有的 `codex-menu.pages.dev` 项目把同源 `/api` 请求转发给 Worker。这样浏览器只需访问 Pages 域名，也不会把缺失的静态回退页面误当作 API JSON。
+
 ## 使用 Docker 部署 Node 服务
 
 工程提供 `Dockerfile`、`compose.yaml` 和 `deploy/nginx.example.conf`。以下操作未在当前环境实际部署。

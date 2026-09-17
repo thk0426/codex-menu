@@ -20,6 +20,8 @@ Worker 项目不需要填写 Pages 的“构建输出目录”。`wrangler.jsonc
 
 如果当前失败的项目是 **Pages** 项目，建议返回“创建应用程序”，重新以 Workers 项目导入同一仓库。只把 `dist` 上传为 Pages 静态站点会导致页面能打开、双人同步接口却不可用。
 
+为兼容已经创建的 `codex-menu.pages.dev` 项目，仓库也提供了 Pages Function：`functions/api/[[path]].js`。Pages 的 Git 构建会自动识别该目录，把 `/api/*` 请求转发到 `codex-menu` Worker；静态页面仍由 `dist` 提供。若 Pages 页面显示 `Unexpected end of JSON input`，说明当前部署尚未包含这项 Function，重新部署最新的 `main` 即可。
+
 部署完成后打开：
 
 ```text

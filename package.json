@@ -9,6 +9,7 @@
     "deploy": "node scripts/build-cloudflare.js && wrangler deploy",
     "dev:cloudflare": "node scripts/build-cloudflare.js && wrangler dev",
     "check:cloudflare": "node scripts/build-cloudflare.js && wrangler deploy --dry-run --outdir artifacts/cloudflare-dry-run",
+    "check:pages": "node scripts/build-cloudflare.js && wrangler pages functions build functions --outdir artifacts/pages-functions --build-output-directory dist",
     "smoke:cloudflare": "node scripts/check-cloudflare-runtime.js",
     "start": "node server/index.js",
     "preview": "node scripts/start-preview.js",
