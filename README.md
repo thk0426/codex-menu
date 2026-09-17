@@ -2,6 +2,8 @@
 
 一餐两人，刚好是我们。帮助两位用户各自选菜，找到共同想吃的那一口。
 
+在线访问：[https://codex-menu.pages.dev](https://codex-menu.pages.dev)
+
 交付包含**原生微信小程序（WXML / WXSS / JavaScript）**、可持久化的 Node.js 双人同步服务、Cloudflare Workers 部署入口，以及便于电脑查看的响应式浏览器预览。小程序使用原生页面，没有使用 web-view 包装网页。
 
 ## 已实现
